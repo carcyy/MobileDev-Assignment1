@@ -62,7 +62,7 @@ struct myCatImage: View {
         Image("kittyCat")
             .resizable()
             .scaledToFit()
-            .clipShape(Circle())
+            .clipShape(Circle()) //makes the image take on a circular shape: https://developer.apple.com/documentation/swiftui/view/clipshape(_:style:)
     }
 }
 
