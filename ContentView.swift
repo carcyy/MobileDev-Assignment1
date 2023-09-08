@@ -22,14 +22,14 @@ struct ContentView: View {
                     .offset(CGSize(width: -100, height: -75))
             }
         }
+        .background(gradient()) //added a background using the gradient struct/function, moved background gradient out of ContentView
     }
 }
 
-//after some exploring on the internet, this is just the struct that provides us the display
+//after some exploring on the internet, this is just the struct that provides us the ***DISPLAY PREVIEW: meaning that nothing in here makes it into the final compile, just a preview in Xcode.
 struct ContentView_Previews:  PreviewProvider {
     static var previews: some View {
         ContentView()
-            .background(gradient()) //added a background using the gradient struct/function
     }
 }
 
